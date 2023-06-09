@@ -1,0 +1,25 @@
+.ufo {
+    transition: 0.2s ease;
+
+    position: fixed;
+    left: 250px;
+    top: 250px;
+
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.ufo .body {
+    transition: 0.2s ease;
+    overflow: visible;
+}
+
+.ufo:hover .body {
+    -webkit-filter: drop-shadow(2px 6px 6px #ccbcbc);
+    filter: drop-shadow(2px 6px 6px #958181);
+}
+
+.ufo > * {
+    cursor: pointer;
+}

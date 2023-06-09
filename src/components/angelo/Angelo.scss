@@ -1,0 +1,27 @@
+.angelo {
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.angelo .arm {
+
+}
+
+.wave {
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-15deg);
+        transform-origin: 75% 50%;
+      }
+      50% {
+        transform: rotate(30deg);
+        transform-origin: 75% 50%;
+      }
+      100% {
+        transform: rotate(-15deg);
+        transform-origin: 75% 50%;
+      }
+}
