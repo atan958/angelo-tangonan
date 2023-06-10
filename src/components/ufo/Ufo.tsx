@@ -7,12 +7,14 @@ const INACTIVE_LIGHT_COLOR = "#ACF4D4";
 // const RIM_COLOUR = "#93429F";
 
 interface UfoProps {
+    width: number | string, 
+    height: number | string,
     onClick: () => void,
 }
 
-export const Ufo = ({ onClick }: UfoProps) => {
+export const Ufo = ({ width, height, onClick }: UfoProps) => {
   return (
-    <svg width="560px" height="100%" viewBox="0 0 959 424" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflow: "visible" }}>
+    <svg width={width} height={height} viewBox="0 0 959 424" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflow: "visible" }}>
         <g className="ufo" onClick={onClick}>
             <Window />
             <Body />

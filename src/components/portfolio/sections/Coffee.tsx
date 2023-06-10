@@ -1,6 +1,8 @@
 const Coffee = () => {
   return (
-    <div className="section">Coffee</div>
+    <section>
+      <div className="section coffee">Coffee</div>
+    </section>
   )
 }
 
